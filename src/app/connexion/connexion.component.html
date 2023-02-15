@@ -1,0 +1,66 @@
+<br><br>
+<div class="container">
+  <div class="row">
+    <span>
+      This is declarant' variable
+      <div *ngFor="let dec of declarant">
+
+        {{ dec.id }} {{ dec.nom }} {{ dec.prenom }}
+         
+      </div>
+      
+    </span>
+
+    <form [formGroup] = "myForm">
+
+      Value : {{ myForm.value | json }}
+
+      <div class="text-center" style="margin-left:290px;">
+        <div class="card text-center mb-1" style="width: 45rem; border: 3px solid #000000;">
+          <br>
+          <h4> <strong> Accéder à votre compte </strong></h4>
+          <br>
+          <div class="card-body">
+            <form method="POST">
+            <div class = "form-group row" style="margin-left:70px;">
+              <label class = "col-sm-4 col-form-label"> Id :</label>
+              <div class = "col-sm-5">
+                <mat-form-field>
+                  <input matInput placeholder="" formControlName = "id">
+                </mat-form-field>
+              </div>
+            </div>
+            <br>
+            <div class = "form-group row" style="margin-left:70px;">
+              <label class = "col-sm-4 col-form-label"> Nom :</label>
+              <div class = "col-sm-5" >
+                <mat-form-field>
+                  <input matInput placeholder="nom" formControlName = "nom">
+                </mat-form-field>
+              </div>
+            </div>
+            <br>
+            <div class = "form-group row" style="margin-left:70px;">
+              <label class = "col-sm-4 col-form-label"> Prénom :</label>
+              <div class = "col-sm-5">
+                <mat-form-field>
+                  <input matInput placeholder="prenom" formControlName = "prenom">
+                </mat-form-field>
+              </div>
+            </div>
+            <br><br>
+                  <input class="btn" style="background-color:  #AFDBF2;" type="submit" value="Se Connecter">
+                <br><br>
+                  <a style="color:back; " class="btn" href="">Email ou mot de passe oublié ?</a>
+                  <br>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </form>
+
+  </div>
+</div>
+
+<br><br>

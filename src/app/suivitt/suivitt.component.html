@@ -1,0 +1,293 @@
+<br><br>
+<h3 class="text-center">  
+    Suivi du dossier de l'enfant <strong> {{ identificationInfirme.nom }} {{ identificationInfirme.prenom }} </strong>
+    <br> 
+    et de son déclarant <strong> {{ declarant.nom }} {{ declarant.prenom }} </strong>
+</h3>
+
+<div class="container" style="max-width: 1250px;">
+    <div class="row">
+        <div class="row row-cols-3 row-cols-md-4">
+<div class="col-md-12">
+    <br><br>
+    <div class="card mb-3" style="border: 4px solid #EEE;">
+        <div class="card-body">
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+                    <br>
+                        <h5 class="card-title">  Information sur le declarant : </h5>
+                    <div class="card-body rounded">
+                        <table class="table border border-4">
+                            <thead rounded>
+                            <tr class="list-group-item-secondary">
+                                <th>CIN</th>
+                                <th>Nom</th>
+                                <th>Prénom</th>
+                                <th>RIB</th>
+                                <th>Qualification</th>
+                                <th>Téléphone</th>
+                                <th>Adresse</th>
+                                <th>Email</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>{{ declarant.numeroCnie }}</td>
+                                    <td>{{ declarant.nom }}</td>
+                                    <td>{{ declarant.prenom }}</td>
+                                    <td>{{ declarant.rib }}</td>
+                                    <td>{{ declarant.qualification }}</td>
+                                    <td>{{ contact.telephone }}</td>
+                                    <td>{{ contact.adresse }}</td>
+                                    <td>{{ contact.email }}</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                    </div>
+        </div>
+    </div>
+</div>
+<br>
+
+    <!-- <div class="container" style="max-width: 1200px;">
+        <div class="row">
+            <div class="row row-cols-3 row-cols-md-4">
+                <div class="col-md-12">
+                    <div class="card mb-3" style="border: 4px solid #EEE;">
+                        <div class="card-body">
+                            <br>
+                            <h5 class="card-title text-center">  DECLARANT </h5>
+                            <br>
+                            <div class="card-body">
+
+                                    <label class = "col-form-label"> CIN :  {{ declarant.numeroCnie }}</label>
+                                    
+                                    <label class = " col-form-label"> Nom : {{ declarant.nom }} </label> 
+                                    
+                                    <label class = "col-form-label"> Prénom : {{ declarant.prenom }}</label>
+                                    
+                                    <label class = " col-form-label"> RIB : {{ declarant.rib }}</label>
+                                    
+                                    <label class = " col-form-label"> Qualification : {{ declarant.qualification }}</label>
+                                
+                                    <label class = " col-form-label"> Téléphone : {{ contact.telephone }}</label>
+                                    
+                                    <label class = "col-form-label"> Adresse : {{ contact.adresse }}</label>
+                                    
+                                    <label class = "col-form-label"> Email : {{ contact.email }}</label>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                            <h5 class="card-title"> Numero de prestation : </h5>
+                        <div class="card-body rounded">
+                            <table class="table border border-4">
+                                <thead rounded>
+                                <tr class="list-group-item-secondary">
+                                    <th>Numéro PMR</th>
+                                    <th>Numéro PMI</th>
+                                    
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>{{ numeroDePrestation.numeroPMR }}</td>
+                                        <td>{{ numeroDePrestation.numeroPMI }}</td>
+
+                                    </tr>
+                                  </tbody>
+                                </table>
+                        </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!-- <br>
+    <div class="container" style="max-width: 1200px;">
+        <div class="row">
+            <div class="row row-cols-3 row-cols-md-4">
+                <div class="col-md-12">
+                    <div class="card mb-3" style="border: 4px solid #EEE;">
+                        <div class="card-body">
+                            <br>
+                            <h5 class="card-title text-center">  NUMERO DE PRESTATION </h5>
+                            <br>
+                            <div class="card-body">
+                                    <label class = "col-form-label"> N° PMR : {{ numeroDePrestation.numeroPMR }}</label>
+                                    
+                                    <label class = " col-form-label"> N° PMI : {{ numeroDePrestation.numeroPMI }}</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                                <h5 class="card-title"> Information sur l'enfant infirme :</h5>
+        
+                            <div class="card-body rounded">
+                                <table class="table border border-4">
+                                    <thead rounded>
+                                    <tr class="list-group-item-secondary">
+                                        <th>CIN</th>
+                                        <th>Nom</th>
+                                        <th>Prénom</th>
+                                        <th>Date de naissance</th>
+                                        <th>Code massar</th>
+                                        <th>Nature de l'infirmité</th>
+                                        <th>Date de l'adhésion</th>
+                                        <th>Référenciel situation</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>{{ identificationInfirme.numeroCnie }}</td>
+                                            <td>{{ identificationInfirme.nom }}</td>
+                                            <td>{{ identificationInfirme.prenom }}</td>
+                                            <td>{{ identificationInfirme.dateNaissance }}</td>
+                                            <td>{{ identificationInfirme.codeMassar }}</td>
+                                            <td>{{ identificationInfirme.natureInfirmite }}</td>
+                                            <td>{{ identificationInfirme.dateAdhesion }}</td>
+                                            <td>{{ identificationInfirme.referencielSituation }}</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                            </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <!-- <br>
+        <div class="container" style="max-width: 1200px;">
+            <div class="row">
+                <div class="row row-cols-3 row-cols-md-4">
+                    <div class="col-md-12">
+                        <div class="card mb-3" style="border: 4px solid #EEE;">
+                            <div class="card-body">
+                                <br>
+                                <h5 class="card-title text-center">  ENFANT INFIRME </h5>
+                                <br>
+                                <div class="card-body">
+                        
+                                    <label class = "col-form-label"> CIN : {{ identificationInfirme.numeroCnie }}</label>
+                                    
+                                    <label class = " col-form-label"> Nom : {{ identificationInfirme.nom }}</label>
+                                    
+                                    <label class = "col-form-label"> Prénom : {{ identificationInfirme.prenom }}</label> 
+                                    
+                                    <label class = " col-form-label"> Date de naissance : {{ identificationInfirme.dateNaissance }}</label> 
+                                    
+                                    <label class = "col-form-label"> Code massar : {{ identificationInfirme.codeMassar }}</label>
+                                      
+                                    <label class = " col-form-label"> Nature de l'infirmité : {{ identificationInfirme.natureInfirmite }}</label>
+                                    
+                                    <label class = "col-form-label"> Date de l'adhésion : {{ identificationInfirme.dateAdhesion }}</label>
+                                     
+                                    <label class = " col-form-label"> Référenciel situation : {{ identificationInfirme.referencielSituation }}</label>
+                                    
+                                <br>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                                <h5 class="card-title">  Piece du dossier de l'enfant infirme : </h5>
+        
+                            <div class="card-body rounded">
+                                <table class="table border border-4">
+                                    <thead rounded>
+                                    <tr class="list-group-item-secondary">
+                                        <th>CIN</th>
+                                        <th>Demande</th>
+                                        <th>Attestation</th>
+                                        <th>Allocations familiales</th>
+                                        <th>Pensions temporaires</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td *ngIf="pieceARejoindre.numeroCnie"><img style="width: 150px; height: 150px;" src="{{pieceARejoindre.numeroCnie}}" ></td>
+                                            <td *ngIf="pieceARejoindre.demande"><img style="width: 150px; height: 150px;" src="{{pieceARejoindre.demande}}" ></td>
+                                            <td *ngIf="pieceARejoindre.attestation"><img style="width: 150px; height: 150px;" src="{{pieceARejoindre.attestation}}" ></td>
+                                            <td *ngIf="pieceARejoindre.allocationsFamiliales"><img style="width: 150px; height: 150px;" src="{{pieceARejoindre.allocationsFamiliales}}" ></td>
+                                            <td *ngIf="pieceARejoindre.pensionsTemporaires"><img style="width: 150px; height: 150px;" src="{{pieceARejoindre.pensionsTemporaires}}" ></td>
+                                            <td class="" *ngIf="!pieceARejoindre.numeroCnie && !pieceARejoindre.demande && !pieceARejoindre.attestation && !pieceARejoindre.allocationsFamiliales && !pieceARejoindre.pensionsTemporaires">  </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                            </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <br>
+        <div class="container" style="max-width: 1200px;">
+            <div class="row">
+                <div class="row row-cols-3 row-cols-md-4">
+                    <div class="col-md-12">
+                        <div class="card mb-3" style="border: 4px solid #EEE;">
+                            <div class="card-body">
+                                <br>
+                                <h5 class="card-title text-center">  PIECE DU DOSSIER </h5>
+                                <br>
+                                <div class="card-body">
+
+                                    <label class = "col-form-label"> CIN : {{ pieceARejoindre.numeroCnie }}</label>
+                                    <img style="width: 100px;" src="{{pieceARejoindre.numeroCnie}}" >
+                                    
+                                    <label class = " col-form-label"> Demande : {{ pieceARejoindre.demande }}</label>
+                                    <img style="width: 100px;" src="{{pieceARejoindre.demande}}" >
+                                    
+                                    <label class = "col-form-label"> Attestation : {{ pieceARejoindre.attestation }}</label> 
+                                    <img style="width: 100px;" src="{{pieceARejoindre.attestation}}" >
+                                    
+                                    <label class = " col-form-label"> Allocations familiales : {{ pieceARejoindre.allocationsFamiliales }}</label> 
+                                    <img style="width: 100px;" src="{{pieceARejoindre.allocationsFamiliales}}" >
+                                    
+                                    <label class = "col-form-label"> Pensions temporaires : {{ pieceARejoindre.pensionsTemporaires }}</label>
+                                    <img style="width: 100px;" src="{{pieceARejoindre.pensionsTemporaires}}" >
+                                     
+                                    <br>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+
+<br><br>
+

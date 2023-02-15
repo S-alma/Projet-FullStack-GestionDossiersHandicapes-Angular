@@ -1,0 +1,475 @@
+<br><br>
+<h3 class="text-center">  <strong> Deuxième étape :</strong>  Service de déclaration </h3>
+<br><br>
+
+<div class="container" style="max-width: 1250px;">
+    <div class="row">
+        <div class="row row-cols-2 row-cols-md-2">
+            <div class="col-md-9">
+                <div class="card mb-3" style="border: 4px solid #EEE;">
+                    <div class="card-body">
+                        <br>
+                        <h5 class="card-title text-center"> <strong>DECLARANT</strong>  </h5>
+                        <br>
+                        <div class="card-body">
+
+                        <div class = "form-group row">
+
+                            <form method="POST" [formGroup] = "declarant">
+
+                                <div class="row">
+                                    <div class="col">
+                                      <input type="text" class="form-control" placeholder="Cin" formControlName = "numeroCnie">
+                                    </div>
+                                    <div class="col">
+                                      <input type="text" class="form-control" placeholder="Nom" formControlName = "nom">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Prénom" formControlName = "prenom">
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Rib" formControlName = "rib">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Qualification" formControlName = "qualification">
+                                    </div>
+                                    <div class="col">
+                                    </div>
+                                </div>
+                                <br>
+
+
+                            <!-- <div class = "form-group row">
+                                <label class = "col-sm-4 col-form-label"> CIN </label>
+                                    <div class = "col-sm-6">
+                                        <mat-form-field>
+                                            <input placeholder="" formControlName = "numeroCnie">
+                                        </mat-form-field>
+                                    </div>
+                            </div>
+
+                            <div class = "form-group row">
+                                <label class = "col-sm-4 col-form-label"> Nom </label>
+                                    <div class = "col-sm-6">
+                                        <mat-form-field>
+                                            <input placeholder="" formControlName = "nom">
+                                        </mat-form-field>
+                                    </div>
+                            </div>
+
+                            <div class = "form-group row">
+                                <label class = "col-sm-4 col-form-label"> Prénom </label>
+                                    <div class = "col-sm-6">
+                                        <mat-form-field>
+                                        <input placeholder="" formControlName = "prenom">
+                                    </mat-form-field>
+                                    </div>
+                            </div>
+
+                            <div class = "form-group row">
+                                <label class = "col-sm-4 col-form-label"> RIB </label>
+                                    <div class = "col-sm-6">
+                                        <mat-form-field>
+                                            <input placeholder="" formControlName = "rib">
+                                        </mat-form-field>
+                                    </div>
+                            </div>
+
+                            <div class = "form-group row">
+                                <label class = "col-sm-4 col-form-label"> Qualification </label>
+                                    <div class = "col-sm-6">
+                                        <mat-form-field>
+                                            <input placeholder="" formControlName = "qualification">
+                                        </mat-form-field>
+                                    </div>
+                            </div> -->
+
+                            </form>
+
+                            <form [formGroup] = "contact">
+
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Téléphone" formControlName = "telephone">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Adresse" formControlName = "adresse">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Email" formControlName = "email">
+                                    </div>
+                                </div>
+
+                                <!-- <div class = "form-group row">
+                                <label class = "col-sm-4 col-form-label"> Téléphone </label>
+                                <div class = "col-sm-6">
+                                <mat-form-field>
+                                    <input placeholder="" formControlName = "telephone">
+                                </mat-form-field></div>
+                                </div>
+                                
+                                <div class = "form-group row">
+                                <label class = "col-sm-4 col-form-label"> Adresse </label>
+                                <div class = "col-sm-6">
+                                <mat-form-field>
+                                    <input placeholder="" formControlName = "adresse">
+                                </mat-form-field></div>
+                                </div>
+                                
+                                <div class = "form-group row">
+                                <label class = "col-sm-4 col-form-label"> Email </label>
+                                <div class = "col-sm-6">
+                                <mat-form-field>
+                                    <input placeholder="" formControlName = "email">
+                                </mat-form-field></div>
+                                </div> -->
+
+                            </form>
+
+                        </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card mb-3" style="border: 4px solid #EEE;">
+                    <div class="card-body">
+                        <br>
+                        <h5 class="card-title text-center"> <strong>NUMERO DE PRESTATION</strong>  </h5>
+                        <br><br>
+                        <form [formGroup] = "numeroDePrestation">
+
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Numéro PMR" formControlName = "numeroPMR">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Numéro PMI" formControlName = "numeroPMI">
+                                </div>
+                            </div>
+                            <br><br>
+
+                        <!-- <div class="card-body">
+
+                            <div class = "form-group row">
+
+                                <div class = "form-group row">
+                                <label class = "col-sm-4 col-form-label"> N° PMR </label>
+                                <div class = "col-sm-6">
+                                <mat-form-field>
+                                    <input placeholder="" formControlName = "numeroPMR">
+                                </mat-form-field></div>
+                                </div>
+
+                                <div class = "form-group row">
+                                <label class = "col-sm-4 col-form-label"> N° PMI </label>
+                                <div class = "col-sm-6">
+                                <mat-form-field>
+                                    <input placeholder="" formControlName = "numeroPMI">
+                                </mat-form-field></div>
+                                </div>
+
+                            </div>
+
+                        </div> -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <br><br><br><br>
+
+            <div class="col-md-12">
+                <div class="card mb-3" style="border: 4px solid #EEE;">
+                    <div class="card-body">
+                        <br>
+                        <h5 class="card-title text-center"> <strong>IDENTIFICATION DE L'INFIRME</strong>  </h5>
+                        <br>
+                        <div class="card-body">
+
+                        <div class = "form-group row">
+
+                        <form [formGroup] = "identificationInfirme">
+
+                                <div class="row">
+                                    <div class="col">
+                                      <input type="text" class="form-control" placeholder="Cin" formControlName = "numeroCnie">
+                                    </div>
+                                    <div class="col">
+                                      <input type="text" class="form-control" placeholder="Nom" formControlName = "nom">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Prénom" formControlName = "prenom">
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="row">
+                                    <div class="col">
+                                        Date de naissance
+                                        <input type="date" class="form-control" placeholder="Date de naissance " formControlName = "dateNaissance">
+                                    </div>
+                                    <div class="col">
+                                        Date de l'adhésion
+                                        <input type="date" class="form-control" placeholder="Date de l'adhésion" formControlName = "dateAdhesion">
+                                    </div>
+                                </div>
+                                <br>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Nature de l'infirmité" formControlName = "natureInfirmite">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Référenciel situation" formControlName = "referencielSituation">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Code massar" formControlName = "codeMassar">
+                                    </div>
+                                </div>
+
+                        <!-- <div class="card-body">
+
+                            <div class = "form-group row">
+                            <label class = "col-sm-4 col-form-label"> CIN </label>
+                            <div class = "col-sm-6">
+                            <mat-form-field>
+                                <input placeholder="" required formControlName = "numeroCnie">
+                            </mat-form-field></div>
+                            </div>
+
+                            <div class = "form-group row">
+                            <label class = "col-sm-4 col-form-label"> Nom </label>
+                            <div class = "col-sm-6">
+                            <mat-form-field>
+                                <input placeholder="" formControlName = "nom">
+                            </mat-form-field></div>
+                            </div>
+
+                            <div class = "form-group row">
+                            <label class = "col-sm-4 col-form-label"> Prénom </label>
+                            <div class = "col-sm-6">
+                            <mat-form-field>
+                                <input placeholder="" formControlName = "prenom">
+                            </mat-form-field></div>
+                            </div>
+
+                            <div class = "form-group row">
+                            <label class = "col-sm-4 col-form-label"> Date de naissance </label>
+                            <div class = "col-sm-6">
+                            <mat-form-field>
+                                <input placeholder="" type="date" formControlName = "dateNaissance">
+                            </mat-form-field></div>
+                            </div>
+
+                            <div class = "form-group row">
+                            <label class = "col-sm-4 col-form-label"> Code massar </label>
+                            <div class = "col-sm-6">
+                            <mat-form-field>
+                                <input placeholder="" formControlName = "codeMassar">
+                            </mat-form-field> </div>
+                            </div>
+                            
+                            <div class = "form-group row">
+                            <label class = "col-sm-4 col-form-label"> Nature de l'infirmité </label> 
+                            <div class = "col-sm-6">
+                            <mat-form-field>
+                                <input placeholder="" formControlName = "natureInfirmite">
+                            </mat-form-field></div>
+                            </div>
+                            
+                            <div class = "form-group row">
+                            <label class = "col-sm-4 col-form-label"> Date de l'adhésion </label>
+                            <div class = "col-sm-6">
+                            <mat-form-field>
+                                <input placeholder="" type="date" formControlName = "dateAdhesion">
+                            </mat-form-field></div>
+                            </div>
+
+                            <div class = "form-group row">
+                            <label class = "col-sm-4 col-form-label"> Référenciel situation </label>
+                            <div class = "col-sm-6">
+                            <mat-form-field>
+                                <input placeholder="" formControlName = "referencielSituation">
+                            </mat-form-field></div>
+                            </div>
+
+                        </div> -->
+                    </form>
+                    
+                </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    <!-- <div class="container" style="max-width: 1300px;">
+        <div class="row">
+            <div class="row row-cols-4 row-cols-md-4">
+                <div class="col-md-4">
+                    <div class="card mb-3" style="border: 4px solid #EEE;">
+                        <div class="card-body">
+                            <br>
+                            <h5 class="card-title text-center">  DECLARANT </h5>
+                            <br>
+                            <div class="card-body">
+
+                                <form [formGroup] = "declarant">
+
+                                <label class = "col-form-label"> CIN :</label> &nbsp;
+                                <mat-form-field>
+                                    <input placeholder="" formControlName = "numeroCnie">
+                                </mat-form-field>
+                                <br>
+                                <label class = " col-form-label"> Nom :</label> &nbsp;
+                                <mat-form-field>
+                                    <input placeholder="" formControlName = "nom">
+                                </mat-form-field>
+                                <br>
+                                <label class = "col-form-label"> Prénom :</label> &nbsp;
+                                <mat-form-field>
+                                    <input placeholder="" formControlName = "prenom">
+                                </mat-form-field>
+                                <br>
+                                <label class = " col-form-label"> RIB :</label> &nbsp;
+                                <mat-form-field>
+                                    <input placeholder="" formControlName = "rib">
+                                </mat-form-field>
+                                <br>
+                                <label class = " col-form-label"> Qualification :</label> &nbsp;
+                                <mat-form-field>
+                                    <input placeholder="" formControlName = "qualification">
+                                </mat-form-field>
+
+                                </form>
+
+                                <form [formGroup] = "contact">
+
+                                    <label class = " col-form-label"> Téléphone :</label> &nbsp;
+                                    <mat-form-field>
+                                        <input placeholder="" formControlName = "telephone">
+                                    </mat-form-field>
+                                    <br>
+                                    <label class = "col-form-label"> Adresse :</label> &nbsp;
+                                    <mat-form-field>
+                                        <input placeholder="" formControlName = "adresse">
+                                    </mat-form-field>
+                                    <br>
+                                    <label class = "col-form-label"> Email :</label> &nbsp;
+                                    <mat-form-field>
+                                        <input placeholder="" formControlName = "email">
+                                    </mat-form-field>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <br><br><br>
+                    <div class="card mb-3" style="border: 4px solid #EEE;">
+                        <div class="card-body">
+                            <form [formGroup] = "numeroDePrestation">
+
+                            <br>
+                            <h5 class="card-title text-center">  NUMERO DE PRESTATION </h5>
+                            <br>
+                            <div class="card-body">
+                                <label class = "col-form-label"> Numéro PMR :</label> &nbsp;
+                                <mat-form-field>
+                                    <input placeholder="" formControlName = "numeroPMR">
+                                </mat-form-field>
+                                <br>
+                                <label class = " col-form-label"> Numéro PMI :</label> &nbsp;
+                                <mat-form-field>
+                                    <input placeholder="" formControlName = "numeroPMI">
+                                </mat-form-field>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="card mb-3" style="border: 4px solid #EEE;">
+                        <div class="card-body">
+
+                            <form [formGroup] = "identificationInfirme">
+
+                            <br>
+                            <h5 class="card-title text-center"> IDENTIFICATION DE L'INFIRME </h5>
+                            <br>
+ 
+                            <div class="card-body">
+                                <label class = "col-form-label"> CIN :</label> &nbsp;
+                                <mat-form-field>
+                                    <input placeholder="" required formControlName = "numeroCnie">
+                                </mat-form-field>
+                                <br>
+                                <label class = " col-form-label"> Nom :</label> &nbsp;
+                                <mat-form-field>
+                                    <input placeholder="" formControlName = "nom">
+                                </mat-form-field>
+                                <br>
+                                <label class = "col-form-label"> Prénom :</label> &nbsp;
+                                <mat-form-field>
+                                    <input placeholder="" formControlName = "prenom">
+                                </mat-form-field>
+                                <br>
+                                <label class = " col-form-label"> Date de naissance :</label> &nbsp;
+                                <mat-form-field>
+                                    <input placeholder="" type="date" formControlName = "dateNaissance">
+                                </mat-form-field>
+                                <br>
+                                <label class = "col-form-label"> Code massar :</label> &nbsp;
+                                <mat-form-field>
+                                    <input placeholder="" formControlName = "codeMassar">
+                                </mat-form-field> 
+                                <br> 
+                                <label class = " col-form-label"> Nature de l'infirmité :</label> &nbsp;
+                                <mat-form-field>
+                                    <input placeholder="" formControlName = "natureInfirmite">
+                                </mat-form-field>
+                                <br>
+                                <label class = "col-form-label"> Date de l'adhésion :</label> &nbsp;
+                                <mat-form-field>
+                                    <input placeholder="" type="date" formControlName = "dateAdhesion">
+                                </mat-form-field>
+                                <br> 
+                                <label class = " col-form-label"> Référenciel situation :</label> &nbsp;
+                                <mat-form-field>
+                                    <input placeholder="" formControlName = "referencielSituation">
+                                </mat-form-field>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div> -->
+
+<br>
+<div class="d-flex justify-content-center">
+    <a class="btn" href="declarationnn" style="background-color:  #AFDBF2;" type="submit">Retour</a>
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    <!-- <a class="btn" (click)="onViewDeclaration()" href="declarationn" style="background-color:  #AFDBF2;" type="submit">Suivant</a> -->
+    <a class="btn" (click)="onViewDeclaration()" style="background-color:  #AFDBF2;" type="submit">Suivant</a>
+</div>
+<br><br>
